@@ -9,6 +9,7 @@ namespace MySudoku
     /// </summary>
     public partial class Levels : Window
     {
+        
         Generator g = new Generator();
         int n = 0;
         public int?[][] current = new int?[9][];
@@ -62,8 +63,9 @@ namespace MySudoku
         {
             current = g.mass;
             g.Medium(current);
+            Show_cells(current);
+
             EndButton.IsEnabled = true;
-           
             checkBox2.IsEnabled = false;
             checkBox.IsEnabled = false;
         }
@@ -72,6 +74,8 @@ namespace MySudoku
         {
             current = g.mass;
             g.Hard(current);
+            Show_cells(current);
+
             EndButton.IsEnabled = true;
             
         }
