@@ -1,0 +1,103 @@
+﻿<Window x:Class="MySudoku.Levels"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MySudoku"
+        mc:Ignorable="d"
+        Title="Levels" Height="500" Width="625">
+    <Grid Name ="grid">
+        <Rectangle Fill="BlueViolet" HorizontalAlignment="Left" Height="352" Margin="211,51,0,0" Stroke="Black" VerticalAlignment="Top" Width="352" RenderTransformOrigin="0.496,0.492" Visibility="Collapsed"/>
+        <Label x:Name="label" Content="Выберите сложность:" HorizontalAlignment="Left" Margin="10,11,0,0" VerticalAlignment="Top" Height="40" Width="170"/>
+        <CheckBox x:Name="checkBox" Content="Легко" HorizontalAlignment="Left" Margin="10,51,0,0" VerticalAlignment="Top" Height="23" Width="137" Checked="checkBox_Checked"/>
+        <CheckBox x:Name="checkBox1" Content="Средне" HorizontalAlignment="Left" Margin="10,79,0,0" VerticalAlignment="Top" Width="118" Height="29" Checked="checkBox1_Checked"/>
+        <CheckBox x:Name="checkBox2" Content="Сложно" HorizontalAlignment="Left" Margin="10,108,0,0" VerticalAlignment="Top" Width="95" Height="36" Checked="checkBox2_Checked"/>
+        <Button x:Name="EndButton" Content="Проверка!" HorizontalAlignment="Left" Margin="10,292,0,0" VerticalAlignment="Top" Width="170" Height="69" Click="button1_Click"/>
+        <TextBox x:Name="textBox_80" HorizontalAlignment="Left" Height="40" Margin="563,34,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="40"/>
+        <TextBox x:Name="textBox_70" HorizontalAlignment="Left" Height="40" Margin="518,34,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="40"/>
+        <TextBox x:Name="textBox_60" HorizontalAlignment="Left" Height="40" Margin="473,34,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="40"/>
+        <TextBox x:Name="textBox_50" HorizontalAlignment="Left" Height="40" Margin="428,34,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="40"/>
+        <TextBox x:Name="textBox_40" HorizontalAlignment="Left" Height="40" Margin="383,34,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="40"/>
+        <TextBox x:Name="textBox_30" HorizontalAlignment="Left" Height="40" Margin="338,34,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="40"/>
+        <TextBox x:Name="textBox_20" HorizontalAlignment="Left" Height="40" Margin="293,34,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="40"/>
+        <TextBox x:Name="textBox_10" HorizontalAlignment="Left" Height="40" Margin="248,34,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="40"/>
+        <TextBox x:Name="textBox_00" HorizontalAlignment="Left" Height="40" Margin="203,34,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="40" />
+        <TextBox x:Name="textBox_02" HorizontalAlignment="Left" Height="40" Margin="203,124,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="40"/>
+        <TextBox x:Name="textBox_03" HorizontalAlignment="Left" Height="40" Margin="203,169,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="40"/>
+        <TextBox x:Name="textBox_01" HorizontalAlignment="Left" Height="40" Margin="203,79,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="40"/>
+        <TextBox x:Name="textBox_04" HorizontalAlignment="Left" Height="40" Margin="203,214,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="40"/>
+        <TextBox x:Name="textBox_05" HorizontalAlignment="Left" Height="40" Margin="203,259,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="40"/>
+        <TextBox x:Name="textBox_06" HorizontalAlignment="Left" Height="40" Margin="203,304,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="40"/>
+        <TextBox x:Name="textBox_07" HorizontalAlignment="Left" Height="40" Margin="203,349,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="40"/>
+        <TextBox x:Name="textBox_08" HorizontalAlignment="Left" Height="40" Margin="203,394,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="40"/>
+        <TextBox x:Name="textBox_11" HorizontalAlignment="Left" Height="40" Margin="248,79,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="40"/>
+        <TextBox x:Name="textBox_21" HorizontalAlignment="Left" Height="40" Margin="293,79,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="40"/>
+        <TextBox x:Name="textBox_31" HorizontalAlignment="Left" Height="40" Margin="338,79,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="40"/>
+        <TextBox x:Name="textBox_41" HorizontalAlignment="Left" Height="40" Margin="383,79,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="40"/>
+        <TextBox x:Name="textBox_51" HorizontalAlignment="Left" Height="40" Margin="428,79,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="40"/>
+        <TextBox x:Name="textBox_61" HorizontalAlignment="Left" Height="40" Margin="473,79,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="40"/>
+        <TextBox x:Name="textBox_71" HorizontalAlignment="Left" Height="40" Margin="518,79,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="40"/>
+        <TextBox x:Name="textBox_81" HorizontalAlignment="Left" Height="40" Margin="563,79,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="40"/>
+        <TextBox x:Name="textBox_82" HorizontalAlignment="Left" Height="40" Margin="563,124,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="40"/>
+        <TextBox x:Name="textBox_72" HorizontalAlignment="Left" Height="40" Margin="518,124,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="40"/>
+        <TextBox x:Name="textBox_62" HorizontalAlignment="Left" Height="40" Margin="473,124,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="40"/>
+        <TextBox x:Name="textBox_52" HorizontalAlignment="Left" Height="40" Margin="428,124,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="40"/>
+        <TextBox x:Name="textBox_42" HorizontalAlignment="Left" Height="40" Margin="383,124,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="40"/>
+        <TextBox x:Name="textBox_32" HorizontalAlignment="Left" Height="40" Margin="338,124,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="40"/>
+        <TextBox x:Name="textBox_22" HorizontalAlignment="Left" Height="40" Margin="293,124,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="40"/>
+        <TextBox x:Name="textBox_12" HorizontalAlignment="Left" Height="40" Margin="248,124,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="40"/>
+        <TextBox x:Name="textBox_13" HorizontalAlignment="Left" Height="40" Margin="248,169,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="40"/>
+        <TextBox x:Name="textBox_23" HorizontalAlignment="Left" Height="40" Margin="293,169,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="40"/>
+        <TextBox x:Name="textBox_33" HorizontalAlignment="Left" Height="40" Margin="338,169,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="40"/>
+        <TextBox x:Name="textBox_43" HorizontalAlignment="Left" Height="40" Margin="383,169,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="40"/>
+        <TextBox x:Name="textBox_53" HorizontalAlignment="Left" Height="40" Margin="428,169,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="40"/>
+        <TextBox x:Name="textBox_63" HorizontalAlignment="Left" Height="40" Margin="473,169,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="40"/>
+        <TextBox x:Name="textBox_73" HorizontalAlignment="Left" Height="40" Margin="518,169,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="40"/>
+        <TextBox x:Name="textBox_83" HorizontalAlignment="Left" Height="40" Margin="563,169,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="40"/>
+        <TextBox x:Name="textBox_84" HorizontalAlignment="Left" Height="40" Margin="563,214,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="40"/>
+        <TextBox x:Name="textBox_74" HorizontalAlignment="Left" Height="40" Margin="518,214,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="40"/>
+        <TextBox x:Name="textBox_64" HorizontalAlignment="Left" Height="40" Margin="473,214,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="40"/>
+        <TextBox x:Name="textBox_54" HorizontalAlignment="Left" Height="40" Margin="428,214,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="40"/>
+        <TextBox x:Name="textBox_44" HorizontalAlignment="Left" Height="40" Margin="383,214,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="40"/>
+        <TextBox x:Name="textBox_34" HorizontalAlignment="Left" Height="40" Margin="338,214,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="40"/>
+        <TextBox x:Name="textBox_24" HorizontalAlignment="Left" Height="40" Margin="293,214,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="40"/>
+        <TextBox x:Name="textBox_14" HorizontalAlignment="Left" Height="40" Margin="248,214,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="40"/>
+        <TextBox x:Name="textBox_15" HorizontalAlignment="Left" Height="40" Margin="248,259,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="40"/>
+        <TextBox x:Name="textBox_25" HorizontalAlignment="Left" Height="40" Margin="293,259,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="40"/>
+        <TextBox x:Name="textBox_35" HorizontalAlignment="Left" Height="40" Margin="338,259,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="40"/>
+        <TextBox x:Name="textBox_45" HorizontalAlignment="Left" Height="40" Margin="383,259,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="40"/>
+        <TextBox x:Name="textBox_55" HorizontalAlignment="Left" Height="40" Margin="428,259,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="40"/>
+        <TextBox x:Name="textBox_65" HorizontalAlignment="Left" Height="40" Margin="473,259,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="40"/>
+        <TextBox x:Name="textBox_75" HorizontalAlignment="Left" Height="40" Margin="518,259,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="40"/>
+        <TextBox x:Name="textBox_85" HorizontalAlignment="Left" Height="40" Margin="563,259,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="40"/>
+        <TextBox x:Name="textBox_86" HorizontalAlignment="Left" Height="40" Margin="563,304,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="40"/>
+        <TextBox x:Name="textBox_76" HorizontalAlignment="Left" Height="40" Margin="518,304,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="40"/>
+        <TextBox x:Name="textBox_66" HorizontalAlignment="Left" Height="40" Margin="473,304,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="40"/>
+        <TextBox x:Name="textBox_56" HorizontalAlignment="Left" Height="40" Margin="428,304,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="40"/>
+        <TextBox x:Name="textBox_46" HorizontalAlignment="Left" Height="40" Margin="383,304,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="40"/>
+        <TextBox x:Name="textBox_36" HorizontalAlignment="Left" Height="40" Margin="338,304,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="40"/>
+        <TextBox x:Name="textBox_16" HorizontalAlignment="Left" Height="40" Margin="248,304,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="40"/>
+        <TextBox x:Name="textBox_26" HorizontalAlignment="Left" Height="40" Margin="293,304,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="40"/>
+        <TextBox x:Name="textBox_17" HorizontalAlignment="Left" Height="40" Margin="248,349,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="40"/>
+        <TextBox x:Name="textBox_18" HorizontalAlignment="Left" Height="40" Margin="248,394,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="40"/>
+        <TextBox x:Name="textBox_27" HorizontalAlignment="Left" Height="40" Margin="293,349,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="40"/>
+        <TextBox x:Name="textBox_37" HorizontalAlignment="Left" Height="40" Margin="338,349,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="40"/>
+        <TextBox x:Name="textBox_47" HorizontalAlignment="Left" Height="40" Margin="383,349,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="40"/>
+        <TextBox x:Name="textBox_57" HorizontalAlignment="Left" Height="40" Margin="428,349,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="40"/>
+        <TextBox x:Name="textBox_67" HorizontalAlignment="Left" Height="40" Margin="473,349,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="40"/>
+        <TextBox x:Name="textBox_77" HorizontalAlignment="Left" Height="40" Margin="518,349,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="40"/>
+        <TextBox x:Name="textBox_87" HorizontalAlignment="Left" Height="40" Margin="563,349,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="40"/>
+        <TextBox x:Name="textBox_28" HorizontalAlignment="Left" Height="40" Margin="293,394,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="40"/>
+        <TextBox x:Name="textBox_38" HorizontalAlignment="Left" Height="40" Margin="338,394,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="40"/>
+        <TextBox x:Name="textBox_48" HorizontalAlignment="Left" Height="40" Margin="383,394,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="40"/>
+        <TextBox x:Name="textBox_58" HorizontalAlignment="Left" Height="40" Margin="428,394,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="40"/>
+        <TextBox x:Name="textBox_68" HorizontalAlignment="Left" Height="40" Margin="473,394,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="40"/>
+        <TextBox x:Name="textBox_78" HorizontalAlignment="Left" Height="40" Margin="518,394,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="40"/>
+        <TextBox x:Name="textBox_88" HorizontalAlignment="Left" Height="40" Margin="563,394,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="40"/>
+        <Label x:Name="label1" Content="Количество проверок:" HorizontalAlignment="Left" Height="33" Margin="5,185,0,0" VerticalAlignment="Top" Width="175"/>
+        <Label x:Name="label2" Content="Количество ошибок при&#xD;&#xA;последней проверке:" HorizontalAlignment="Left" Height="62" Margin="5,230,0,0" VerticalAlignment="Top" Width="175"/>
+        <Button x:Name="button1" Content="Завершить игру!" HorizontalAlignment="Left" Height="54" Margin="10,380,0,0" VerticalAlignment="Top" Width="170" IsEnabled="False" Click="button1_Click_1"/>
+
+
+    </Grid>
+</Window>

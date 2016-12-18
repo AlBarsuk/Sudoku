@@ -1,0 +1,19 @@
+﻿<Window x:Class="MySudoku.Rules"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MySudoku"
+        mc:Ignorable="d"
+        Title="Rules" Height="400" Width="400">
+    <Grid>
+        <TextBlock x:Name="textBlock" HorizontalAlignment="Left" Height="244" Margin="10,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="354"><Run Text="Играть в судоку крайне просто, основная задача - заполнить все пустые клетки цифрами от 1 до 9.
+                                                                                                                                                                    Чтобы решить судоку нужно следовать основным правилам:
+                                                                                                                                                              1) Цифра может появиться только один раз в каждой строчке 
+                                                                                                                                                              2) Цифра может появиться только один раз в каждом столбике 
+                                                                                                                                                              3) Цифра должна появлять только один раз в к квадрате 3 на 3"
+                                                                                                                                                              /><LineBreak/><Run Text="И самое главное - игра не закончиться до тех пор, пока не будут правильно расставлены все цифры"/></TextBlock>
+        <Button x:Name="button" Content="К главному меню" HorizontalAlignment="Left" Height="41" Margin="84,284,0,0" VerticalAlignment="Top" Width="222" Click="button_Click"/>
+
+    </Grid>
+</Window>
