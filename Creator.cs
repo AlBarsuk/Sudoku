@@ -113,7 +113,9 @@ namespace ConsoleApplication1
         }
         #endregion
 
-        #region LVL but it works incorrectly
+        #region LVL but it works incorrectly// Изначально планировал, чтобы в зависимости от уровня, судоку сразу заполнялся с нулями, 
+                                             //но это приводило к ошибкам, решил сначала создавать, а потом уже вставлять 0
+           
         //void DefineLVL(LVL _lvl)
         //{
         //    switch (_lvl)
