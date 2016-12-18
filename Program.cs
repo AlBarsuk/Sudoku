@@ -18,11 +18,33 @@ namespace ConsoleApplication1
         {
             Program p = new Program();
             Creator c = Creator.GetInstance();
+            //DifferentLevels DL = new DifferentLevels();
             //int?[][] mass = null;
             mass = c.Create();
+            var m = mass;
             var l = mass;
-            level(l);
+            for (int i = 0; i < mass.Length; i++)
+            {
+                for (int j = 0; j < mass[i].Length; j++)
+                {
+                    if (j == 3 || j == 6)
+                    {
+                        Console.Write(" || ");
+                    }
+                    Console.Write(mass[i][j] + " ");
+                }
+                if (i == 2 || i == 5)
+                {
+                    Console.WriteLine();
+                }
+                Console.WriteLine();
+            }
+            Console.WriteLine();
+            //level_medium(l);
+            //level_easy(l);
             //level1(l);
+            
+            level_hard(l);
             //var t = p.level1(l);
             for (int i = 0; i < l.Length; i++)
             {
@@ -42,35 +64,74 @@ namespace ConsoleApplication1
             }
             Console.ReadKey();
         }
-
-        public static void level(int?[][] l)
+        public static void level_medium(int?[][] l)
         {
-            for (int i = 0; i < l.Length; i=i+2)
+            for (int i = 0; i < l.Length; i++)
             {
-                
-                for (int j = 0; j < l[i].Length; j=j+2)
+
+                for (int j = 0; j < l[i].Length; j++)
                 {
                     if (i == 1 || i == 4)
                     {
                         l[i][j] = 0;
                     }
-                    if (j == 1 || j==3)
+                    if (j == 1 || j == 3)
                     {
                         l[i][j] = 0;
                     }
-                    l[i][j] = 0; 
+
                 }
             }
+            //return Level_mass;
         }
-        public static void level1(int?[][] l)
+        public static void level_easy(int?[][] l)
         {
-            for (int i = 0; i < l.Length; i = i + 3)
+            for (int i = 0; i < l.Length; i++)
             {
                 for (int j = 0; j < l[i].Length; j = j + 2)
                 {
-                    l[i][j] = 0;
+                    if (i == 2 || i == 4)
+                    {
+                        l[i][j] = 0;
+                    }
+
+                    if (j == 4 || j == 8)
+                    {
+                        l[i][j] = 0;
+                    }
+                    //l[i][j] = 0;
                 }
             }
         }
+
+
+        public static void level_hard(int?[][] l)
+        {
+            for (int i = 0; i < l.Length; i++)
+            {
+                for (int j = 0; j < l[i].Length; j++)
+                {
+                    if (i == 1)
+                    {
+                        l[i][j] = 0;
+                    }
+                    if (i == 5 || i == 7)
+                    {
+                        l[i][j] = 0;
+                    }
+
+                    if (j == 1 || j == 8)
+                    {
+                        l[i][j] = 0;
+                    }
+                    if (j == 5)
+                    {
+                        l[i][j] = 0;
+                    }
+                    //l[i][j] = 0;
+                }
+            }
+        }
+
     }
 }
